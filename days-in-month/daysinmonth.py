@@ -67,10 +67,9 @@ def days_in_month(date):
                      6: 30, 7: 31, 8: 31, 9: 30,
                      10: 31, 11: 30, 12: 31}
 
-    # check if the month is february
-
-        # check if it's a leap year
+    # check if the month is february   
     if month == 2:
+        # check if it's a leap year
         if is_leap_year(year):
             return 29
         else: 
