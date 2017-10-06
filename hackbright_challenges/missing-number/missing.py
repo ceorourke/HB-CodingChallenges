@@ -12,12 +12,16 @@ def missing_number(nums, max_num):
     
     """
 
-    nums = sorted(nums)
+    # nums = sorted(nums)
 
-    for num in nums:
-        if nums[num] != num + 1:
-            return num + 1
-
+    # for num in nums:
+    #     if nums[num] != num + 1:
+    #         return num + 1
+    
+    return (sum(range(max_num + 1))) - (sum(nums))
+    # 1 + 2 + 3 = 6 
+    # 1 + _ + 3 = 4
+    # 6-4 = 2
 
 
 if __name__ == '__main__':
