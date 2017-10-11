@@ -36,23 +36,38 @@ def  lemur(branches):
         # if next AND next next are alive, jump 2 spaces
     # if next is alive and next next is dead, jump 1 space
     # increment counter each jump
-    if len(branches) < 2:
-        return 0
+    # if len(branches) < 2:
+    #     return 0
 
-    if len(branches) < 3:
-        return 1
+    # if len(branches) < 3:
+    #     return 1
 
-    count = 0
+    # count = 0
+    # branch = 0
+
+    # while branch < (len(branches)-1):
+    #     if branches[branch + 1] == 1:
+    #         branch += 2
+    #     else:
+    #         if branches[branch + 2] == 0:
+    #             branch+= 2
+    #         else:
+    #             branch += 1
+    #     count += 1
+
+    # return count
+
+#####################################################################
+# way shorter version
+
     branch = 0
+    count = 0
 
-    while branch < (len(branches)-1):
-        if branches[branch + 1] == 1:
-            branch += 2
-        else:
-            if branches[branch + 2] == 0:
-                branch+= 2
-            else:
-                branch += 1
+    while branch < len(branches) - 1:
+        branch += 2
+        if branch >= len(branches) or branches[branch] == 1:
+            # We can jump this far, so only jump 1
+            branch -= 1
         count += 1
 
     return count
