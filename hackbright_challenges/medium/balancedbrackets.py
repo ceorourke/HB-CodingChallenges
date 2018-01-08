@@ -75,6 +75,7 @@ def has_balanced_brackets(phrase):
 
     return True
 
+
 if __name__ == '__main__':
     import doctest
     if doctest.testmod().failed == 0:
