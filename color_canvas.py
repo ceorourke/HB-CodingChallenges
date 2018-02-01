@@ -80,7 +80,7 @@ def paint_recursive(v, h, new_color, canvas, start_color=None):
 # paint(1, 1, 'r', canvas)
 for array in canvas:
     print array
-paint_recursive(1, 1, 'r', canvas)
+paint_recursive(0, 1, 'r', canvas)
 
 print "\n\n\n\n\n\n"
 for line in canvas:

@@ -34,11 +34,11 @@ class MultiStack:
 
     def IndexOfTop(self, stacknum):
         offset = stacknum * self.stacksize
-        # print stacknum, self.stacksize
-        # print offset
-        # print "offset ^ "
-        # print offset + self.sizes[stacknum] - 1
-        # print " ^ index of top return statement"
+        print stacknum, self.stacksize
+        print offset
+        print "offset ^ "
+        print offset + self.sizes[stacknum] - 1
+        print " ^ index of top return statement"
         return offset + self.sizes[stacknum] - 1 # -1
 
 def ThreeInOne():
