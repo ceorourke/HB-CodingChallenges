@@ -18,6 +18,7 @@ def play_game():
         for row in board:
             print row
 
+
         board = handle_player_move('x', options, board)
 
         if detect_horizontal_win(board, 'x') or detect_vertical_win(board, 'x') or detect_diagonal_win(board, 'x'):
@@ -39,6 +40,9 @@ def play_game():
 
         num_moves += 1
 
+    for row in board:
+        print row
+
     print winner + " has won the game."
 
 def handle_player_move(player, options, board):
@@ -49,7 +53,7 @@ def handle_player_move(player, options, board):
 
     while True:
         try:
-            move = int(raw_input('Player ' + player.upper() + ' --> '))
+            move = int(raw_input('\n Player ' + player.upper() + ' --> '))
         except ValueError:
             print "Please choose a number between 1 and 9."
             continue
