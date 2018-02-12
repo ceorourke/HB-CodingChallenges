@@ -26,7 +26,7 @@ def calc(s):
     """Evaluate expression."""
 
     result = 0
-    stack = [char for char in s if char != " "]
+    stack = s.split()
     first = int(stack.pop())
     second = int(stack.pop())
 
