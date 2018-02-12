@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="tables.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+
+</script>
+</head>
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+<body>
+
+<center><button class="wrapper" id="json-btn">Get JSON data</button></center>
+</br>
+
+<table id="country-table">
+    <tr>
+        <th>Country</th>
+        <th>Dial Code</th>
+        <th>Country Code</th>
+    </tr>
+</table>
+
+</body>
+</html>
