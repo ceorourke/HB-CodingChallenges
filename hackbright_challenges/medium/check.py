@@ -74,6 +74,8 @@ def check(king, queen):
         return True
 
     # diagonal check
+    # basically asking are you (for example 2) 2 up and 2 left? 
+    # or maybe 2 down and 2 right?
     if abs(king_col - queen_col) == abs(king_row - queen_row):
         return True
 
